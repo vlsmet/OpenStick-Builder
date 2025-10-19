@@ -59,9 +59,10 @@ usermod -aG sudo user
 
 cat <<EOF >>/etc/bash.bashrc
 
-alias ls='ls --color=auto -lh'
-alias ll='ls --color=auto -lhA'
-alias l='ls --color=auto -l'
+l='ls --color=auto -lah'
+ls='ls --color=auto'
+ll='ls --color=auto -lh'
+la='ls --color=auto -lAh'
 alias cl='clear'
 alias ip='ip --color'
 alias bridge='bridge -color'
